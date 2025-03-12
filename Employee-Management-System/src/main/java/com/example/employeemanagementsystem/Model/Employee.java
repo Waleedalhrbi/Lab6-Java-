@@ -38,6 +38,8 @@ public class Employee {
     @Pattern(regexp = "supervisor|coordinator", message = "The value must be either supervisor or coordinator ")
     private String position;
 
+    @NotEmpty(message = "Please enter a value")
+    @AssertFalse
     private boolean onLeave = false;
 
     @PastOrPresent(message = "The date must be in the present or past")
