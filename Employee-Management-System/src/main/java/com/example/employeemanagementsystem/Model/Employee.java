@@ -38,7 +38,7 @@ public class Employee {
     @Pattern(regexp = "supervisor|coordinator", message = "The value must be either supervisor or coordinator ")
     private String position;
 
-    @NotEmpty(message = "Please enter a value")
+    @NotNull(message = "Please enter a value")
     @AssertFalse
     private boolean onLeave = false;
 
